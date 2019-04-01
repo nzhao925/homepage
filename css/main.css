@@ -1,0 +1,327 @@
+*{
+	margin:0pt;
+}
+
+.intro{
+	width: 40em;
+	margin: auto;
+	padding-top: calc(50vh - 24em);
+	text-align:center;
+	font-weight:400;
+  display:flex;
+  color:white;
+	line-height: 1.4;
+}
+
+
+.right p{
+	margin-top:1em;
+	font-size:1.1em;
+}
+
+.right h1{
+	margin-top:1.3em;
+	font-size:2em;
+}
+
+
+.left{
+	display:block;
+	width:23.6em;
+	height:40em;
+	margin:0.2em;
+}
+
+.right{
+	display:block;
+	width:15.6em;
+	height:40em;
+	margin:0.2em;
+}
+
+.fill{
+	display:block;
+	perspective: 1200px;
+  transition: all 0.1s linear;
+}
+
+
+html.no-touch .outfill:hover .fill{
+  transform: perspective(1200px) rotateY(-13deg);
+  opacity: 1;
+}
+
+
+.card0{
+	width:15.6em;
+	height:8em;
+	margin-bottom:0.4em;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  position: relative;
+	background-color:#71287d;
+}
+
+.card1{
+	width:15.6em;
+	height:15.8em;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  position: relative;
+	background-color:#673ab7;
+}
+
+.card2{
+	width:15.6em;
+	height:15.4em;
+	margin-top:0.4em;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  position: relative;
+	background-color:#7c4dff;
+}
+
+
+
+
+
+.flipped {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.back {
+  transform: rotateY( 180deg );
+}
+
+
+
+
+
+
+nav {
+	position:float;
+  width: 40em;
+  height: 8.4em;
+  display: flex;
+  margin: auto;
+	padding: 0em;
+}
+
+
+.navfix{
+	position:fixed;
+	top:0;
+	margin-left:calc(50% - 20em);
+}
+
+pagetitle {
+  display: flex;
+  margin: auto;
+}
+
+.titletext{
+	cursor:default;
+	margin-top:1.5em;
+	font-size: 2.5em;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.25s, opacity 0.25s linear;
+}
+
+.show{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.25s linear;
+}
+
+
+.col1{
+	min-height:100vh;
+}
+
+.col{
+/*	padding-top:6.5em;*/
+	margin:auto;
+	min-height:100vh;
+}
+/*
+@media screen and (max-width: 700px) {.col{width:auto;margin-left:1em;margin-right:1em} .col p,a,li{font-size:1.05em;}}
+@media screen and (min-width: 700px) and (max-width: 760px) {.col{width:630px;margin:auto} .col p,a,li{font-size:12px;}}
+@media screen and (min-width: 760px) and (max-width: 1440px) {.col{width:80%;margin:auto}}
+@media screen and (min-width: 2560px) {.col{width:1300px;margin:auto}}
+*/
+.col p, a, li{
+  font-weight:400;
+  text-align: left;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    word-break:break-word;
+    hyphens: auto;
+}
+
+.long p{
+margin:0.5em;
+}
+
+i { 
+    font-style: italic
+}
+
+.col h1,h2,h3,h4,h5,h6 {
+  text-align: left;
+	font-weight:500;
+	background-color:var(--maincolorl);
+	color:black!important;
+	display:block;
+	padding-top:0.5em;
+}
+
+
+
+.titletext{	font-weight:500;}
+
+.intro h1,h2,h3,a{
+		font-weight:400;
+	color:white;
+}
+
+.col a{
+	text-decoration:none;
+	color:var(--maincolor);
+}
+
+.col-3{
+    -webkit-column-count: 3; 
+    -moz-column-count: 3;
+    column-count: 3;
+		margin-left:1em;
+}
+
+
+#research .short{
+	display:block;
+	cursor:pointer;
+	color:grey;
+}
+
+#research .long{
+	display:none;
+	cursor:pointer;
+	color:black;
+}
+
+.abs{
+	display:none
+}
+
+
+.col h3,h4,h5,h6,li,p{
+	margin-left:0em
+}
+#about li{
+	padding-left:2.8em; text-indent:-2.8em
+}
+
+html.no-touch .box:hover {
+  transform: perspective(600px) rotateY(15deg);
+  opacity: 0.8;
+}
+
+.box {
+  width: 20%;
+  height: 100%;
+  background-color: var(--maincolorl);
+  transform: perspective(600px) rotateY(0deg);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  margin:calc(0.2em/1.2);
+	font-weight:400;
+	font-size:1.2em;
+  color: rgba(255,255,255,1);
+  text-decoration:none;
+}
+
+.box-down{
+	padding-top:0.5em;
+	height:2em;
+}
+
+.box .first {
+	display:block;
+	margin-top:calc(50% - 1.0em);
+	margin-bottom:-0.25em;
+	padding-top: 0.25em;
+  font-size:3.5em;
+	font-weight:300;
+}
+
+.box-down .first{
+	display:inline;
+	font-size:1em ;
+	margin:0;
+	margin-top:0.5em;
+	font-weight:400;
+}
+
+
+
+.boxactive {
+color:white;
+  background-color: var(--maincolor);
+}
+
+.flip {
+  animation: flipping 0.5s;
+}
+
+.flip-b {
+  animation: flipping-b 0.5s;
+}
+
+@keyframes flipping {
+  0% {
+    transform: perspective(600px) rotateY(15deg);
+  }
+  25% {
+    transform: perspective(600px) rotateY(90deg);
+  }
+  100% {
+    {
+      transform: perspective(600px) rotateY(360deg);
+    }
+  }
+}
+
+@keyframes flipping-b {
+  0% {
+    transform: perspective(600px) rotateY(-15deg);
+  }
+  25% {
+    transform: perspective(600px) rotateY(-90deg);
+  }
+  100% {
+    {
+      transform: perspective(600px) rotateY(-360deg);
+    }
+  }
+}
+
+
+hr{
+	height:2px;
+	border:0;
+}
+
+.sort{
+	cursor:pointer
+}
+
